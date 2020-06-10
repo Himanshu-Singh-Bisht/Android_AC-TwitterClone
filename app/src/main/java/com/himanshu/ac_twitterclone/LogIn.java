@@ -16,7 +16,6 @@ import com.shashank.sony.fancytoastlib.FancyToast;
 
 public class LogIn extends AppCompatActivity implements View.OnClickListener
 {
-
     private EditText edtLogInEmail ,edtLogInPassword;
     private Button btnLogInSignUp , btnLogInLogIn;
 
@@ -81,7 +80,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener
                 });
                 break;
             case R.id.btnLogInSignUp :
-                
+
                 break;
         }
     }
