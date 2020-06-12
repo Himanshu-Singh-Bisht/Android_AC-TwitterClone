@@ -129,6 +129,15 @@ public class TwiiterActivity extends AppCompatActivity implements AdapterView.On
                         }
                     }
                 });
+
+                break;
+
+            case R.id.sendTweetItem :
+
+                Intent intent = new Intent(TwiiterActivity.this , SendTweetActivity.class);
+                startActivity(intent);
+
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
