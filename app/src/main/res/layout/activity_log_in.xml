@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#346836"
+    android:onClick="rootLayoutTapped"
     tools:context=".LogIn">
 
     <EditText
