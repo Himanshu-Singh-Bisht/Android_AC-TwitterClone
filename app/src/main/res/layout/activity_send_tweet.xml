@@ -1,34 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBE207"
+    android:orientation="vertical"
     tools:context=".SendTweetActivity">
 
     <EditText
         android:id="@+id/edtTweet"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+
+
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="10dip"
         android:ems="10"
         android:hint="Enter a Tweet"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnSendTweet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="10dip"
+        android:background="#FF5722"
         android:onClick="sendTweet"
         android:text="Send Tweet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTweet" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnViewTweets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="20dip"
+        android:background="#03A9F4"
+        android:text="View Other User's Tweets"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/viewTweetsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip" />
+</LinearLayout>
